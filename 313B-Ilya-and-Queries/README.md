@@ -3,5 +3,5 @@
 - **Rating:** 1100
 - **Tags:** dp, implementation
 - **Language:** PyPy 3-64
-- **Verdict:** Accepted (686 ms, 8000 KB)
+- **Verdict:** Accepted (592 ms, 8000 KB)
 _Synced automatically by [CodeHub](https://github.com)_
