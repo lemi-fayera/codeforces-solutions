@@ -1,23 +1,29 @@
 n = int(input())
 cards = list(map(int, input().split()))
 
-seraja = dima = 0
-left, right = 0, n - 1
-turn = True
+seraja = 0
+dima = 0
+ser = True
+left = 0
+right = len(cards)-1
 
 while left <= right:
-    card = cards[left] if cards[left] > cards[right] else cards[right]
-
     if cards[left] > cards[right]:
-        left += 1
+        if ser:
+            seraja += cards[left]
+            ser = False
+            left += 1
+        else:
+            dima += cards[left]
+            ser = True
+            left += 1
     else:
-        right -= 1
-
-    if turn:
-        seraja += card
-    else:
-        dima += card
-
-    turn = not turn
-
+        if ser:
+            seraja += cards[right]
+            ser = False
+            right -= 1
+        else:
+            dima += cards[right]
+            ser = True
+            right -= 1
 print(seraja, dima)
