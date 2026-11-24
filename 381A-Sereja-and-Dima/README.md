@@ -3,5 +3,5 @@
 - **Rating:** 800
 - **Tags:** greedy, implementation, two pointers
 - **Language:** PyPy 3-64
-- **Verdict:** Accepted (62 ms, 0 KB)
+- **Verdict:** Accepted (78 ms, 0 KB)
 _Synced automatically by [CodeHub](https://github.com)_
